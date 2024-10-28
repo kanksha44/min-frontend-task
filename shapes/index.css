@@ -1,0 +1,101 @@
+.margin {
+  margin: 40px;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(162, 255, 0);
+  border-radius: 50%;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid black;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+}
+.parralelogram {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(242, 0, 255);
+  transform: skewx(-30deg);
+}
+
+.diamond {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(246, 74, 17);
+  transform: rotate(45deg);
+}
+.egg {
+  width: 100px;
+  height: 150px;
+  background-color: rgb(41, 4, 42);
+  border-radius: 1px solid black;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+.heart1 {
+  width: 55px;
+  height: 100px;
+  background-color: rgb(246, 74, 17);
+  border-radius: 50% 50% 0 0;
+  transform: rotate(45deg);
+  position: relative;
+}
+.heart2 {
+  width: 55px;
+  height: 100px;
+  background-color: rgb(246, 74, 17);
+  border-radius: 50% 50% 0 0;
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: -169px;
+  left: -25px;
+}
+
+.star {
+  position: relative;
+  display: block;
+  width: 0;
+  height: 0;
+  margin-top: 60px;
+  color: red;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid yellowgreen;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+.star:before {
+  position: absolute;
+  top: -45px;
+  left: -65px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 30px solid transparent;
+  border-bottom: 80px solid yellowgreen;
+  border-left: 30px solid transparent;
+  transform: rotate(-35deg);
+  content: "";
+}
+
+.star:after {
+  position: absolute;
+  top: 3px;
+  left: -105px;
+  display: block;
+  width: 0px;
+  height: 0px;
+  color: yellowgreen;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid yellowgreen;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}

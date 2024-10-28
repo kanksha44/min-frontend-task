@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.js">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Close dialog on outside click <input type="checkbox" id="closeOnOutside"> </h1>
+<h1>Close dialog on escape <input type="checkbox" id="closeOnEscape"></h1>
+<h1>Show close icon <input type="checkbox" id="showCloseIcon"></h1>
+<h1>Show backdrop<input type="checkbox" id="showBackdrop"></h1>
+
+<button id="showDialog">show dialog</button>
+
+<div id="backdrop" class="backdrop"></div>
+
+<div id="dialog-box">
+<div class="dialog-heading">
+    <h1>Modal Heading</h1>
+    <h2 id="closeIcon">x</h2>
+</div>
+<div class="dialog-content">
+    <p>This is modal content. You can put any content here. This has a groovy backdrop!
+    You can also close this modal by clicking outside of it or pressing the escape key</p>
+</div>
+<div class="dialog-btn">
+    <button id="closeBtn">close</button>
+</div>
+</div>
+
+<script src="./index.js"></script>
+
+</body>
+</html>
